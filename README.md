@@ -13,4 +13,16 @@
 
 ![](errores.PNG)
 
+> ## ¿Cuál es la diferencia entre los verbos GET y POST? ¿Qué otros tipos de peticiones existen?
+>
+> La diferencia entre los métodos get y post radica en la forma de enviar los datos a la página cuando se pulsa el botón “Enviar”. Mientras que el método GET envía los datos usando la URL, el método POST los envía de forma que no podemos verlos (en un segundo plano u "ocultos" al usuario).
+> . Get
+> . Options
+> . Head
+> . Put
+> . Post
+> . Delete
+> . Connect
+> .Trace
+
  
