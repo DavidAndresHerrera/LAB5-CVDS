@@ -25,4 +25,10 @@
 > - Connect
 > - Trace
 
+> ## ¿Cuáles son las diferencias con los diferentes parámetros?
+> 
+> **-i** muestra solo informacion del documento
+>
+> **-V** muestra la version
+
  
