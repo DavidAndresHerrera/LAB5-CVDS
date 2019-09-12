@@ -2,8 +2,8 @@
 
 > ## Integrantes
 > 
-> Andres Rocha
-> David Herrera 
+> . Andres Rocha
+> . David Herrera 
 
 > ## ¿Qué codigo de error sale?
 >
@@ -11,6 +11,6 @@
 >
 > ## ¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?
 
-![](errores.png)
+![](errores.PNG)
 
  
