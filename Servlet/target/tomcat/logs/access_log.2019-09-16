@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:10:57:24 -0500] "GET /C:/Users/2147562/Documents/LAB5-CVDS/Servlet/:/Users/2147562/Documents/LAB5-CVDS/Servlet/ HTTP/1.1" 404 1129 http-bio-8080-exec-1 26
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:10:57:24 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 1
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:10:57:43 -0500] "GET / HTTP/1.1" 200 57 http-bio-8080-exec-4 674
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:10:58:01 -0500] "GET /helloServlet HTTP/1.1" 200 16 http-bio-8080-exec-6 45
