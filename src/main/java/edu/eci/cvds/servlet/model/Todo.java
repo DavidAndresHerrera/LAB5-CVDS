@@ -1,3 +1,5 @@
+package edu.eci.cvds.servlet.model;
+
 
 public class Todo {
 	private int id;
@@ -21,7 +23,7 @@ public class Todo {
 	}
 
 	public boolean getCompleted() {
-		return completed
+		return completed;
 	}
 	
 	public void setId(int value) {

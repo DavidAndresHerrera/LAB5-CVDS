@@ -1,4 +1,4 @@
-package edu.eci.cvds.servlet;
+package edu.eci.cvds.servlet.model;
 
 import java.io.BufferedReader;
 import java.io.IOException;
