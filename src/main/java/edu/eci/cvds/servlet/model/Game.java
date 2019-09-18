@@ -31,7 +31,10 @@ public class Game {
         estadoJuego = false;
         numeroIntentos = 0;
         aleatorio = new Random();
-        numeroGenerado = aleatorio.nextInt(1000);
+        aleatorio();
+    }
+    private void aleatorio() {
+    	numeroGenerado = aleatorio.nextInt(1000);
     }
     public int getPuntaje(){
         return puntaje;
@@ -39,8 +42,13 @@ public class Game {
     public int getNumeroIntentos(){
         return numeroIntentos;
     }
-    public boolean getEstado(){
-        return estadoJuego;
+    public String getEstado(){
+    	String ganaste = "Ganaste tu puntaje es  "+puntaje;
+    	if (estadoJuego) return ganaste;
+        return "estas en juego";
+    }
+    public boolean getEstadoJuego() {
+    	return estadoJuego;
     }
     public int getNumeroAleatorio(){
         return numeroGenerado;
@@ -57,10 +65,26 @@ public class Game {
     
     public void guess(int ingresado){
         if (ingresado == numeroGenerado){
-            setEstado();
+            estadoJuego = true;
         }
         else{
-            setPuntaje();
+        	setPuntaje();
+        	if (puntaje <= 0 ) {
+        		
+        		perdiste();
+        	}
+            numeroIntentos += 1;
         }
     }
+    private void perdiste() {
+    	estadoJuego = false;
+    	puntaje = 0;
+    }
+    public void restart() {
+    	puntaje = 100000;
+    	estadoJuego = false;
+    	aleatorio();
+    	numeroIntentos = 0;
+    }
+    
 }
