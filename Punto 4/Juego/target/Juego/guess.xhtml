@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+ 	<h:head></h:head>
+ 	<h:body>
+ 		 <h:form id="guess_form">
+			<p:outputLabel value="#{Game.numeroGenerado}"  style="display:none" />
+			<p:inputText binding="#{input} />
+			<p:outputLabel value="#{Game.numeroIntentos}" />
+			<p:outputLabel value="#{Game.ganaste}" />
+			<p:outputLabel value="#{Game.puntaje}" />
+			
+		 </h:form>
+		
+ 	</h:body>
+</html>
