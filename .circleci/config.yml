@@ -1,4 +1,4 @@
-# Java maven CircleCI 2.0 configuration file
+# Java Maven CircleCI 2.0 configuration file
 #
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
@@ -14,12 +14,11 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/postgres:9.4
 
-    working_directory: ~/"Punto 4"/Juego
-            
+    working_directory: ~"Punto 4\Juego"
+
     environment:
       # Customize the JVM maximum heap limit
-      JVM_OPTS: -Xmx3200m
-      TERM: dumb
+      MAVEN_OPTS: -Xmx3200m
 
     steps:
       - checkout
@@ -27,16 +26,16 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "build.maven" }}
+            - v1-dependencies-{{ checksum "pom.xml" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: maven dependencies
+      - run: mvn dependency:go-offline
 
       - save_cache:
           paths:
-            - ~/.maven
-          key: v1-dependencies-{{ checksum "build.maven" }}
+            - ~/.m2
+          key: v1-dependencies-{{ checksum "pom.xml" }}
 
       # run tests!
-      - run: maven test
+      - run: mvn integration-test
