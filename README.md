@@ -5,6 +5,11 @@
 > - Andres Rocha
 > - David Herrera 
 
+> # BADGES
+> [![CircleCI](https://circleci.com/gh/DavidAndresHerrera/LAB5-CVDS.svg?style=svg)](https://circleci.com/gh/DavidAndresHerrera/LAB5-CVDS)
+
+
+
 > ## ¿Qué codigo de error sale?
 >
 > Sale el error **400 Bad Request**
