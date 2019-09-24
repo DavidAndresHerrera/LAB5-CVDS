@@ -7,7 +7,7 @@
 
 > # BADGES
 > [![CircleCI](https://circleci.com/gh/DavidAndresHerrera/LAB5-CVDS.svg?style=svg)](https://circleci.com/gh/DavidAndresHerrera/LAB5-CVDS)
-
+> [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d31fa02b149147e48dfe02bf838edd87)](https://www.codacy.com/manual/andresro30/LAB5-CVDS?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DavidAndresHerrera/LAB5-CVDS&amp;utm_campaign=Badge_Grade)
 
 
 > ## ¿Qué codigo de error sale?
